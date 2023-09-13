@@ -1,0 +1,5 @@
+.App {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 50rem /* 800px -> 50rem */;
+}

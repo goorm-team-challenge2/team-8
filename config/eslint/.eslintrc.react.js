@@ -20,5 +20,6 @@ module.exports = {
 
 		'react-hooks/rules-of-hooks': 'warn', // TODO: 모든 warn 해결 후 error로 변경
 		'react-hooks/exhaustive-deps': 'warn',
+		'react/prop-types': 'off',
 	},
 };

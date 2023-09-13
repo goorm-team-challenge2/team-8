@@ -1,1 +1,1 @@
-export { default as Hi } from './Hi/Hi';
+export { default as Card } from './Card/Card';

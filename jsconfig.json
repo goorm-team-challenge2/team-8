@@ -5,7 +5,7 @@
         "lib": ["es2020", "dom"],
         "baseUrl": ".",
         "paths": {
-            "@components": ["src/components/index.js"]
+            "@/*": ["src/*"]
         }
     },
     "exclude": ["node_modules"]

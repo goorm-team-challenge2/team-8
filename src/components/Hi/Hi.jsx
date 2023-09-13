@@ -1,3 +1,3 @@
-const Hi = () =>{ <>Hi</>;}
+const Hi = () => <>Hi</>;
 
 export default Hi;

@@ -17,10 +17,9 @@ module.exports = {
 		'import/extensions': ['.js', '.jsx'],
 		'import/resolver': {
 			'babel-module': {
-				'@components': path.resolve(
-					__dirname,
-					'../../src/components/index.js',
-				),
+				alias: {
+					'@': path.resolve(__dirname, '../../src'),
+				},
 			},
 		},
 	},

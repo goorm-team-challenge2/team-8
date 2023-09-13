@@ -1,3 +1,5 @@
+import { Hi } from '@/components';
+
 import logo from './logo.svg';
 
 import './App.css';
@@ -17,6 +19,7 @@ function App() {
 					rel="noopener noreferrer"
 				>
 					Learn React
+					<Hi />
 				</a>
 			</header>
 		</div>

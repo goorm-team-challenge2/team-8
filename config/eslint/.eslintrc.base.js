@@ -1,5 +1,3 @@
-const path = require('path');
-
 /** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
 	parserOptions: {
@@ -16,10 +14,9 @@ module.exports = {
 	settings: {
 		'import/extensions': ['.js', '.jsx'],
 		'import/resolver': {
-			'babel-module': {
-				alias: {
-					'@': path.resolve(__dirname, '../../src'),
-				},
+			jsconfig: {
+				config: 'jsconfig.json',
+				extentions: ['.js', '.jsx'],
 			},
 		},
 	},

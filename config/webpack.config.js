@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable import/order */
 const fs = require('fs');
@@ -328,7 +329,7 @@ module.exports = function (webpackEnv) {
 					'react-dom$': 'react-dom/profiling',
 					'scheduler/tracing': 'scheduler/tracing-profiling',
 				}),
-				'@': path.resolve(__dirname, '../src'),
+				'@': path.resolve(__dirname, '../src/'),
 				...(modules.webpackAliases || {}),
 			},
 			plugins: [

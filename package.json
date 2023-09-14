@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "@babel/core": "^7.16.0",
+    "@goorm-dev/gds-challenge": "file:config/packages/goorm-dev-gds-challenge-1.0.0.tgz",
+    "@goorm-dev/gds-icons": "file:config/packages/goorm-dev-gds-icons-1.14.0.tgz",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^5.5.0",
     "babel-jest": "^27.4.2",

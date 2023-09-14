@@ -1,18 +1,15 @@
-import { Card } from '@/components';
+import { EmptyView } from '@/components';
+import Header from '@/components/Header/Header';
 
-import './App.css';
+import styles from './App.module.scss';
 
 function App() {
 	return (
-		<div className="App">
-			<Card center>
-				<img
-					width={112}
-					src="https://statics.goorm.io/images/gds/empty_task.svg"
-					alt="hi"
-				/>
-				응답한 참여자가 없습니다.
-			</Card>
+		<div className={styles.App}>
+			<Header />
+			<main className={styles.main}>
+				<EmptyView />
+			</main>
 		</div>
 	);
 }

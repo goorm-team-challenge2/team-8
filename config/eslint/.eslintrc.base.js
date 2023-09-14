@@ -21,7 +21,8 @@ module.exports = {
 		},
 	},
 	rules: {
-		'import/no-cycle': 'warn',
+		'import/order': 'warn',
+		'import/no-cycle': 'off',
 		'consistent-return': 'off',
 		'no-tabs': 'off',
 		'object-curly-newline': 'off',
@@ -42,5 +43,6 @@ module.exports = {
 		'implicit-arrow-linebreak': 'off',
 		'import/prefer-default-export': 'off',
 		'no-unused-vars': 'warn',
+		'arrow-body-style': ['error', 'always'],
 	},
 };

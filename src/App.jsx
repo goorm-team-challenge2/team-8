@@ -1,5 +1,4 @@
-import { EmptyView } from '@/components';
-import Header from '@/components/Header/Header';
+import { EmptyView, Header } from '@/components';
 
 import styles from './App.module.scss';
 

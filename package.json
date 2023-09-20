@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "DISABLE_ESLINT_PLUGIN=true WDS_SOCKET_PORT=443 node scripts/start.js",
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "set:lint": "node scripts/vscode-auto-install.js"
   },
   "browserslist": {
     "production": [

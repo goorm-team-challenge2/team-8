@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "WDS_SOCKET_PORT=443 node scripts/start.js",
     "build": "node scripts/build.js"
   },
   "browserslist": {

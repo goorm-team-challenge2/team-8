@@ -10,7 +10,7 @@
 ## ⚙️ 프로젝트 초기 설정법
 
 1. `npm i`
-2. `eslint & prettier` 사용하실 분은 [Eslint & Prettier 사용법](###Eslint-&-Prettier-사용법)을 확인해주세요.
+2. `eslint & prettier` 사용하실 분은 [Eslint & Prettier 사용법](#eslint--prettier-사용법)을 확인해주세요.
 
 ### Eslint & Prettier 사용법
 

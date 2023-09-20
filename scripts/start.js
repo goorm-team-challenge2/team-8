@@ -96,11 +96,7 @@ checkBrowsers(paths.appPath, isInteractive)
 		const compiler = createCompiler({
 			appName,
 			config,
-			urls: {
-				...urls,
-				localUrlForTerminal: 'https://cratest-tafyf.dev.goorm.io/',
-				lanUrlForTerminal: 'https://cratest-tafyf.dev.goorm.io/',
-			},
+			urls,
 			useYarn,
 			useTypeScript,
 			webpack,

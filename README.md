@@ -16,7 +16,7 @@
 
 > 사용하실분만 사용하시면 됩니다. `(선택 사항)`
 
-1. `npm run set:lint`
+1. `vscode extension` 중 `ESLint`와 `Prettier` 설치
 2. `기본 설정: 사용자 설정 열기(JSON)`에 아래 내용 추가
 
     ```json

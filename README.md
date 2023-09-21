@@ -1,7 +1,5 @@
 # goorm Team-Challenge
 
----
-
 ## 📚 참고자료
 
 -   [GDS 스토리북 링크](https://challenge-gds-storybook.dev.goorm.io/)
@@ -17,18 +15,39 @@
 > 사용하실분만 사용하시면 됩니다. `(선택 사항)`
 
 1. `vscode extension` 중 `ESLint`와 `Prettier` 설치
-2. `기본 설정: 사용자 설정 열기(JSON)`에 아래 내용 추가
+2. 명령 팔레트 오픈 (`command(또는 ctrl) + shifr + P`)
+3. 사용자 설정(JSON)오픈 (`Preferences: Open User Settings (JSON)`)
+4. 아래 내용 `Copy & Paste`
 
     ```json
     {
-        ...
-        "editor.formatOnSave": false,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true,
-        },
+    	"workbench.colorTheme": "Default Dark+",
+    	"editor.formatOnSave": false,
+    	"editor.codeActionsOnSave": {
+    		"source.fixAll.eslint": true
+    	}
     }
     ```
 
 ## 🚀 프로젝트 실행법
 
-1. `npm start`
+-   `npm start`
+
+## GDS 및 alias 사용법
+
+```js
+// GDS 컴포넌트
+import { Button } from '@goorm-dev/gds-challenge';
+import { ChevronDoubleLeftIcon } from '@goorm-dev/gds-icons';
+
+// alias (src/* === @/*)
+import { Card } from '@/components';
+
+const Example = () => {
+	return (
+		<>
+			<Button icon={<ChevronDoubleLeftIcon />}>GDS TEST</Button>;<Card></Card>
+		</>
+	);
+};
+```

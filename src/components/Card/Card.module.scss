@@ -1,11 +1,48 @@
 .card {
-    display: flex;
     width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
     border-radius: .5rem /* 8px -> .5rem */;
     background: var(--white);
     border: 1px solid var(--gray-300);
+    line-height: 22px;
+
+
+    & > * {
+        margin: 0;
+    }
+
+    /** collapse 내부 content card의 border-top을 제거 */
+    & + div &_content {
+        border-top: 0;
+    }
+
+    & ~ & {
+        border-top: 0;
+    }
+
+    &_content {
+        display: flex;
+        align-items: flex-start;
+        gap: 35px;
+
+        & > * {
+            flex: 1;
+        }
+    }
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    max-width: 80px;
+}
+
+.content {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
 }
 
 .backgroundColor {

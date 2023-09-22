@@ -15,7 +15,7 @@
 > 사용하실분만 사용하시면 됩니다. `(선택 사항)`
 
 1. `vscode extension` 중 `ESLint`와 `Prettier` 설치
-2. 명령 팔레트 오픈 (`command(또는 ctrl) + shifr + P`)
+2. 명령 팔레트 오픈 (`command(또는 ctrl) + shift + P`)
 3. 사용자 설정(JSON)오픈 (`Preferences: Open User Settings (JSON)`)
 4. 아래 내용 `Copy & Paste`
 

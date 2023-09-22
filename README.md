@@ -31,13 +31,18 @@
 
 ## 🚀 프로젝트 실행법
 
--   `npm start`
+1.  `npm start`
+2.  [URL과 포트 확인](#url과-포트-확인)을 통해 확인할 수 있는 URL에서 실행 화면 확인
 
-## GDS 및 alias 사용법
+### URL과 포트 확인
+
+## 🎨 GDS 및 alias 사용법
 
 ```js
 // GDS 컴포넌트
 import { Button } from '@goorm-dev/gds-challenge';
+
+// GDS 아이콘
 import { ChevronDoubleLeftIcon } from '@goorm-dev/gds-icons';
 
 // alias (src/* === @/*)

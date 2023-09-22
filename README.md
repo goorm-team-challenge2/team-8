@@ -46,7 +46,8 @@ import { Card } from '@/components';
 const Example = () => {
 	return (
 		<>
-			<Button icon={<ChevronDoubleLeftIcon />}>GDS TEST</Button>;<Card></Card>
+			<Button icon={<ChevronDoubleLeftIcon />}>GDS Example</Button>
+			<Card>Alias Example</Card>
 		</>
 	);
 };

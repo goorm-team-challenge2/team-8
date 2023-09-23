@@ -8,8 +8,8 @@ import { useState } from 'react';
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
-	function toggle(){
-		setIsOpen(isOpen==true?false:true);
+	function toggle() {
+		setIsOpen(isOpen == true ? false : true);
 	};
 
 	return (
@@ -32,7 +32,7 @@ const Header = () => {
 							<Button size="lg">다음</Button>
 						</Modal.Footer>
 					</Modal>
-				
+
 				</>
 			</div>
 		</header>

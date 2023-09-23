@@ -1,0 +1,38 @@
+.font1{
+	font-family: Pretendard;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+.font2{
+	font-family: Pretendard;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+.font3{
+	font-family: Pretendard;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+.font4{
+	font-family: Pretendard;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.font5{
+	font-family: Pretendard;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.ex{
+	color: #5094FA;
+}

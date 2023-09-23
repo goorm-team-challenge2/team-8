@@ -5,12 +5,23 @@ import { Button, Typography, Modal, Form, CarouselIndicators, Label, Input } fro
 import styles from './Header.module.scss';
 import { useState } from 'react';
 
-const Step2_1 = () => {
+const Step2_1 = (props) => {
+	const { survey, setSurvey, setCurrentScreen } = props;
 	const [isOpen, setIsOpen] = useState(false);
 	const [sw, setSw] = useState(false);
 	const [notSw, setNotSw] = useState(false);
 	const [goormYActive, setGoormYActive] = useState(false)
 	const [goormNActive, setGoormNActive] = useState(false)
+
+	const handleNext = () => {
+		setCurrentScreen(3);
+		console.log(showStep2);
+	};
+
+	const handlePrev = () => {
+		setCurrentScreen(1);
+		console.log(showStep2);
+	};
 
 	function toggle() {
 		setIsOpen(isOpen == true ? false : true);
@@ -94,8 +105,8 @@ const Step2_1 = () => {
 							</Form.Group>
 						</Modal.Body>
 						<Modal.Footer>
-							<Button size="lg" color="link">이전</Button>
-							<Button size="lg">다음</Button>
+							<Button size="lg" color="link" onClick={handlePrev}>이전</Button>
+							<Button size="lg" onClick={handleNext}>다음</Button>
 						</Modal.Footer>
 						<div style={footer}>
 							<CarouselIndicators length={4} activeIndex={1} ></CarouselIndicators>

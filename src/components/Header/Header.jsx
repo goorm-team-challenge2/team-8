@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import Step1 from '../Survey/Step1/Step1';
+import Step3 from '../Survey/Step3/Step3';
 import Step4 from '../Survey/Step4/Step4';
 
 import { Button, Typography, Modal } from '@goorm-dev/gds-challenge';
@@ -39,6 +40,7 @@ const Header = () => {
 				<>
 					<Modal isOpen={isOpen} toggle={toggle}>
 						{currentScreen == 1 && <Step1 survey={survey} setSurvey={setSurvey} setCurrentScreen={setCurrentScreen}></Step1>}
+						{currentScreen == 3 && <Step3 survey={survey} setSurvey={setSurvey} setCurrentScreen={setCurrentScreen}></Step3>}
 						{currentScreen == 4 && <Step4 setIsOpen={setIsOpen} survey={survey} setSurvey={setSurvey} setCurrentScreen={setCurrentScreen}></Step4>}
 					</Modal>
 				</>

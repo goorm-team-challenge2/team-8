@@ -14,7 +14,7 @@ export default function Step1(props) {
 	const [showStep2, setShowStep2] = useState(false);
 
 	const handleNext = () => {
-		setCurrentScreen(4);
+		setCurrentScreen(3);
 		console.log(showStep2);
 	};
 

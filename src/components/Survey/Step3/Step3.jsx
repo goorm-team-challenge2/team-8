@@ -5,12 +5,24 @@ import { Button, Typography, Modal, CarouselIndicators } from '@goorm-dev/gds-ch
 import styles from './Header.module.scss';
 import { useState } from 'react';
 
-const Step3 = () => {
+const Step3 = (props) => {
+	const { survey, setSurvey, setCurrentScreen } = props;
+	
 	const [isOpen, setIsOpen] = useState(false);
 
 	function toggle() {
 		setIsOpen(isOpen == true ? false : true);
 	};
+
+	const handleNext = () => {
+		setCurrentScreen(4);
+	};
+
+	const handlePrev = () => {
+		setCurrentScreen(1);
+	};
+
+
 
 	const footer = {
 		marginLeft: "20px",
@@ -18,14 +30,15 @@ const Step3 = () => {
 	}
 
 	return (
-		<header className={cn(styles.header)}>
-			<div className={cn(styles.contents)}>
-				<Typography token="h5">
-					구름톤 챌린지 참여자 정보 수집
-				</Typography>
-				<Button size="lg" onClick={toggle} >설문조사 참여하기</Button>
-				<>
-					<Modal isOpen={isOpen} toggle={toggle}>
+		//<header className={cn(styles.header)}>
+		//	<div className={cn(styles.contents)}>
+		//		<Typography token="h5">
+		//			구름톤 챌린지 참여자 정보 수집
+		//		</Typography>
+		//		<Button size="lg" onClick={toggle} >설문조사 참여하기</Button>
+		//		<>
+		//			<Modal isOpen={isOpen} toggle={toggle}>
+		<>
 						<Modal.Header toggle={toggle}>
 							<Typography color="dark" weight={900} >오프라인 팀 챌린지에</Typography>
 							<br></br>
@@ -40,17 +53,18 @@ const Step3 = () => {
 							<Button color="basic" >4. 개발자 친구 만들기</Button>
 						</Modal.Body>
 						<Modal.Footer>
-							<Button size="lg" color="link">이전</Button>
-							<Button size="lg">다음</Button>
+							<Button size="lg" color="link" onClick={handlePrev}>이전</Button>
+							<Button size="lg" onClick={handleNext}>다음</Button>
 						</Modal.Footer>
 						<div style={footer}>
 							<CarouselIndicators length={4} activeIndex={2} ></CarouselIndicators>
 						</div>
-					</Modal>
+						</>
+		//			</Modal>
 
-				</>
-			</div>
-		</header>
+		//		</>
+		//	</div>
+		//</header>
 	);
 };
 
